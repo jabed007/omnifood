@@ -34,9 +34,35 @@ Dfault: 1
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 16px (default value) */
+  /* font-size: 10px (recommended value) trick*/
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  /* font-size: 62.5% ; (always set this value in all project)*/
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #555;
+}
+
+.hero {
+  /* 1 rem = 16px but we set 1 rem = 10px / 62.5% of 16 px that is default value of html tag */
+  /* width: 1300px */
+  /* width: 130rem; */
+  /* always max-width property instead width property */
+  max-width: 130rem;
+  margin: 0 auto; /* cenetered the container */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: rebeccapurple;
+}
+
+.hero-img {
+  width: 100%;
 }
