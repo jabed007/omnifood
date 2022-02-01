@@ -52,25 +52,9 @@ body {
   color: #555;
 }
 
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  /* 1 rem = 16px but we set 1 rem = 10px / 62.5% of 16 px that is default value of html tag */
-  /* width: 1300px */
-  /* width: 130rem; */
-  /* always max-width property instead width property */
-  max-width: 130rem;
-  margin: 0 auto; /* cenetered the container */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 9.6rem;
-
-  /* background-color: rebeccapurple; */
-}
+/* -------------------------- */
+/* GENERAL REUSABLE COMPONENT */
+/* -------------------------- */
 
 .heading-primary {
   font-size: 5.2rem; /* 52px */
@@ -79,12 +63,6 @@ body {
   line-height: 1.05;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem; /* 20px */
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .btn:link,
@@ -127,12 +105,62 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.hero-img {
-  width: 100%;
-}
-
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+/* -------------------------- */
+/* HEADER */
+/* -------------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 4.8rem;
+}
+.logo {
+  height: 2.2rem;
+}
+
+/* -------------------------- */
+/* HERO SECTION */
+/* -------------------------- */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  /* 1 rem = 16px but we set 1 rem = 10px / 62.5% of 16 px that is default value of html tag */
+  /* width: 1300px */
+  /* width: 130rem; */
+  /* always max-width property instead width property */
+  max-width: 130rem;
+  /* height: 100vh; */
+  margin: 0 auto; /* cenetered the container */
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+
+  /* background-color: rebeccapurple; */
+}
+
+.hero-description {
+  font-size: 2rem; /* 20px */
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 .delivered-meals {
