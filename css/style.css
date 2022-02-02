@@ -62,6 +62,30 @@ body {
 /* GENERAL REUSABLE COMPONENT */
 /* -------------------------- */
 
+.container {
+  /* 1140px */
+  max-width: 120rem; /* standard container width */
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem; /* 52px */
   font-weight: 700;
@@ -70,6 +94,8 @@ body {
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
+
+/* ----------Button--------- */
 
 .btn:link,
 .btn:visited {
@@ -102,7 +128,7 @@ body {
 }
 
 .btn--outline:hover,
-.btn:active {
+.btn--outline:active {
   background-color: #fdf2e9;
 
   /* border: 3px solid #fff; */
@@ -125,16 +151,17 @@ body {
   align-items: center;
   background-color: #fdf2e9;
 
-  /* Because we want header to be sticky later */
+  /* Because we want header to be sticky later thats why we define height of the header*/
   height: 9.6rem;
   padding: 4.8rem;
 }
+
 .logo {
   height: 2.2rem;
 }
 
 /* -------------------------- */
-/* HEADER */
+/* NAVIGATION */
 /* -------------------------- */
 
 .main-nav-list {
@@ -240,4 +267,13 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* -------------------------- */
+/* HOW IT WORKS SECTION */
+/* -------------------------- */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
