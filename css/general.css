@@ -18,6 +18,7 @@ Small: 1.05
 Medium: 1.2
 Paragraph default: 1.6
 Testimonial text: 1.8
+Feature text: 1.8
 
 - Letter spacing
 -0.5px
@@ -246,7 +247,7 @@ body {
 }
 
 .margin-bottom-md {
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem !important;
 }
 
 .center-text {
