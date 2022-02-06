@@ -16,6 +16,7 @@ Bold: 700
 Dfault: 1
 Small: 1.05
 Medium: 1.2
+Large: 1.8
 Paragraph default: 1.6
 Testimonial text: 1.8
 Feature text: 1.8
@@ -265,6 +266,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
