@@ -26,11 +26,13 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testiomonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testiomonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
 
@@ -58,10 +60,10 @@
             </p>
 
             <!-- BUTTON -->
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
 
             <div class="delivered-meals">
               <div class="delivered-imgs">
@@ -109,7 +111,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION -->
-      <section class="section-how">
+      <section class="section-how" id="how">
         <!-- HEADING -->
         <div class="container">
           <span class="subheading">How it works</span>
@@ -185,7 +187,7 @@
       </section>
 
       <!-- MEALS SECTION -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <!-- HEADING -->
         <div class="container center-text">
           <span class="subheading">Meals</span>
@@ -318,7 +320,7 @@
       </section>
 
       <!-- TESTIMONIALS SECTION -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <!-- HEADING -->
         <div class="testimonials-container">
           <span class="subheading">Testimonial</span>
@@ -487,7 +489,7 @@
       </section>
 
       <!-- PRICING SECTION -->
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <!-- HEADING -->
         <div class="container">
           <span class="subheading">Pricing</span>
@@ -617,7 +619,7 @@
       </section>
 
       <!-- CALL TO ACTION SECTION -->
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -705,7 +707,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright © 2022 by Omnifood, Inc. All rights reserved.
+            Copyright © <span class="year">2021</span> by Omnifood, Inc. All
+            rights reserved.
           </p>
         </div>
 
@@ -759,7 +762,11 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script deffer src="js/script.js"></script>
+    <script
+      deffer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
 
     <script
       type="module"
